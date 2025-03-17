@@ -1,0 +1,4 @@
+# rename this file to Rocket.toml and add credentials
+
+[default.databases.db]
+url = "mongodb://root:example@db:27017/admin"

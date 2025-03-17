@@ -1,0 +1,21 @@
+site_name: Dragons API
+site_description: This is a simple API to manage dragons.
+site_author: Daenerys Targaryen
+site_url: https://my-dragons.es
+repo_url: https://github.com/dragonstone-org/dragons-api
+edit_uri: edit/main/docs
+
+plugins: 
+  - techdocs-core
+
+nav:
+  - Home: index.md
+  - Authentication: authentication.md
+  - Endpoints and methods: endpoints_and_methods.md
+  - Parameters: parameters.md
+  - Responses: responses.md
+  - Errors: errors.md
+  - Examples: examples.md
+  - Versioning: versioning.md
+  - Limits: limits.md
+  - Contact: contact.md

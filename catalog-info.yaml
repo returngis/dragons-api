@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dragons-api
+  description: Dragons API is a REST API that manages dragons
+  tags:
+    - data
+    - dragons
+    - github
+    - rust
+  links:
+    - url: https://github.com/dragonstone-org/dragons-api
+      title: Source Code
+      icon: github
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: dragonstone-org/dragons-api
+spec:
+  type: service
+  lifecycle: production
+  owner: group:targaryen
+  system: dragonstone

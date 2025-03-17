@@ -1,0 +1,17 @@
+### Add a dragon
+POST http://0.0.0.0:8000/api/dragons
+Content-Type: application/json
+
+{  
+  "name": "Syrax",
+  "owner": "Rhaenyra Targaryen"
+}
+
+### Add another dragon
+POST http://0.0.0.0:8000/api/dragons
+Content-Type: application/json
+
+{  
+  "name": "Caraxes",
+  "owner": "Daemon Targaryen"
+}

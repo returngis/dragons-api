@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Dragons API using Rust",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"dockerComposeFile": "compose.yaml",
+	"service": "app",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"workbench.iconTheme": "file-icons"
+			},
+			"extensions": [
+				"rust-lang.rust-analyzer",
+				"GitHub.copilot",
+				"file-icons.file-icons",
+				"rangav.vscode-thunder-client",
+				"DavidAnson.vscode-markdownlint",
+				"ms-vscode.copilot-mermaid-diagram",
+				"ms-vscode.vscode-websearchforcopilot",
+				"humao.rest-client",
+				"mongodb.mongodb-vscode",
+				"GitHub.vscode-github-actions"
+			]
+		}
+	},
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		8081
+	],
+	"portsAttributes": {
+		"8081": {
+			"label": "Mongo Express",
+			"onAutoForward": "notify"
+		}
+	}
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+	// Configure tool-specific properties.
+	// "customizations": {},
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

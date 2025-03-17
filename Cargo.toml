@@ -1,0 +1,11 @@
+[package]
+name = "dragons-api"
+authors = ["Daenerys Targaryen"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mongodb = "2.8.1"
+rocket = { version = "0.5.0", features = ["json"] }
+rocket_db_pools = { version = "0.1.0", features = ["mongodb"] }
+serde_json = "1.0.114"
