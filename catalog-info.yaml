@@ -9,12 +9,12 @@ metadata:
     - github
     - rust
   links:
-    - url: https://github.com/dragonstone-org/dragons-api
+    - url: https://github.com/returngis/dragons-api
       title: Source Code
       icon: github
   annotations:
     backstage.io/techdocs-ref: dir:.
-    github.com/project-slug: dragonstone-org/dragons-api
+    github.com/project-slug: returngis/dragons-api
 spec:
   type: service
   lifecycle: production
